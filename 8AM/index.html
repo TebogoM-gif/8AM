@@ -6,7 +6,25 @@
     <title>8AM Cafe - Your Daily Ritual, Delivered.</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
+        /* 2. Configure Tailwind Theme to use Kavoon and Outfit */
+        
+        /* Custom font family definitions */
+        .font-kavoon {
+            font-family: 'Kavoon', cursive;
+        }
+        .font-outfit {
+            font-family: 'Outfit', sans-serif;
+        }
+         .font-irish-grover{
+          font-family: 'irish-grover','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS','italics', sans-serif;
+        }
+
+        /* Set base font for body */
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
         /* Custom background image for the Hero section */
         .hero-bg {
             /* Using a common coffee shop interior image as a placeholder */
@@ -14,6 +32,9 @@
             background-size: cover;
             background-position: center;
             height: 80vh; /* Make it a prominent feature */
+        }
+        .section-banner {
+              background-image: url('images/background.jpeg'); 
         }
     </style>
 </head>
@@ -23,7 +44,7 @@
   <!-- ✅ Logo -->
 <a href="index.html" class="flex items-center space-x-2">
  <img
-   src="images/image.png"
+   src="images/logo cropped.jpeg"
    alt="8AM Cafe Logo"
    class="h-20 w-auto bg-amber-1 rounded-lg"
     />
@@ -63,86 +84,89 @@
  </div>
 </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-16">
-        <div class="flex flex-col md:flex-row items-center md:space-x-12">
+    <main class="bg-white max-w-6xl mx-auto px-4 py-16">
+        <div class="flex flex-col md:flex-row items-center md:space-x-12 opacity-100 rounded-full">
             <div class="md:w-1/2 mb-8 md:mb-0">
-                <img class="main-image w-full h-auto rounded-lg shadow-lg" alt="Two coffee cups with latte art">
+                <img src="Images/hero.jpeg">
             </div>
             
             <div class="md:w-1/2">
-                <h1 class="text-4xl font-serif-like font-light text-gray-900 mb-4">Welcome to **8AM Café**</h1>
-                <p class="text-lg leading-relaxed text-gray-600">
+                <h1 class="text-4xl font-kavoon font-extrabold text-amber-800 mb-4">Welcome to 8AM Café</h1><br>
+                <p class="text-lg leading-relaxed text-black">
                     The aroma of freshly brewed coffee is in the air, the morning light is just catching the texture of our creamy milk building. Whether you're here for a quick espresso, a hearty breakfast, or just a quiet moment before the rush, we're ready to serve you!
                 </p>
             </div>
         </div>
     </main>
     
-    <section class="bg-gray-50 py-16 text-center">
+    <section class="bg-white py-16 text-center">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-2xl font-sans-like text-gray-900 mb-2 font-bold tracking-wider uppercase">What We Offer</h2>
-            <p class="text-sm text-gray-500 mb-12">Make Your Mornings Better! Freshly Brewed Coffee & Delicious Pastries.</p>
+            <h2 class="text-4xl font-kavoon text-amber-800 mb-4 font-extrabold tracking-wider">What We Offer</h2>
+            <p class="font-bold font-kavoon text-black mb-12">Make Your Mornings Better! Freshly Brewed Coffee & Delicious Pastries.</p><br>
 
-            <div class="flex flex-wrap justify-center space-y-8 md:space-y-0 md:space-x-16">
-                <div class="w-1/2 md:w-auto flex flex-col items-center">
-                    <svg class="w-12 h-12 text-gray-900 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                    <p class="font-semibold text-gray-800">Grab & go meals</p>
+            <div class="flex flex-wrap justify-center space-y-8 md:space-y-0 md:space-x-28">
+                <div class="w-1/2 md:w-auto flex flex-col items-center"><br>
+                    <img src="icons/grab icon.jpeg" alt="Grab & Go Icon" class="w-22 h-20 mb-5">
+                    <p class="font-bold font-irish-grover text-black">Grab &</p>
+                    <span class="font-semibold font-irish-grover text-black">Go Meals</span>
                 </div>
 
                 <div class="w-1/2 md:w-auto flex flex-col items-center">
-                    <svg class="w-12 h-12 text-gray-900 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v-2m10-4a8 8 0 100 16 8 8 0 000-16zM12 5V2m0 20v-3m8.5-6.5h-3M2.5 12h3M12 17a5 5 0 100-10 5 5 0 000 10z"></path></svg>
-                    <p class="font-semibold text-gray-800">Salads & Bowls</p>
+                    <img src="icons/salad icon.png" alt="Salads & Bowls" class="w-28 h-26 mb-0"><br>
+                    <p class="font-bold font-irish-grover text-black">Salads</p>
+                     <span class="font-semibold font-irish-grover text-black">& Bowls</span>
                 </div>
 
-                <div class="w-1/2 md:w-auto flex flex-col items-center">
-                    <svg class="w-12 h-12 text-gray-900 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2a10 10 0 0110 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0112 2zm0 14a4 4 0 100-8 4 4 0 000 8z"></path></svg>
-                    <p class="font-semibold text-gray-800">Baked Goods</p>
+                <div class="w-1/2 md:w-auto flex flex-col items-center"><br>
+                    <img src="icons/croissant icon.png" alt="Baked Goods" class="w-22 h-20 mb-5"><br>
+                    <p class="font-semibold font-irish-grover text-black">Baked Goods</p>
                 </div>
 
-                <div class="w-1/2 md:w-auto flex flex-col items-center">
-                    <svg class="w-12 h-12 text-gray-900 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13H9m12-5a2 2 0 00-2-2h-3.5a2.5 2.5 0 00-2.5 2.5V11h-2v-1.5a2.5 2.5 0 00-2.5-2.5H5a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V8z"></path></svg>
-                    <p class="font-semibold text-gray-800">Good Coffee</p>
+                <div class="w-1/2 md:w-auto flex flex-col items-center"><br>
+                    <img src="icons/coffee machine icon.jpeg" alt="Good Coffee" class="w-22 h-20 mb-5"><br>
+                    <p class="font-semibold font-irish-grover text-black">Good Coffee</p>
                 </div>
             </div>
         </div>
     </section>
+    <br>
 
     <section class="section-banner h-72 flex items-center justify-center relative">
         <div class="absolute inset-0 bg-black opacity-30"></div>
-        <a href="#" class="relative z-10 bg-white text-gray-900 font-bold py-3 px-8 rounded hover:bg-gray-100 transition duration-300 shadow-xl">
+        <a href="#" class="relative z-10 bg-[#C7A682] text-gray-900 font-bold py-3 px-8 rounded hover:bg-white transition duration-300 shadow-xl">
             View Our Menu
         </a>
-    </section>
+    </section><br>
 
     <section class="max-w-6xl mx-auto px-4 py-16">
         <div class="flex flex-col md:flex-row md:space-x-12">
             
             <div class="md:w-1/2 mb-8 md:mb-0">
-                <h3 class="text-2xl font-serif-like font-light text-gray-900 mb-4 hidden md:block">Find Us</h3>
+                <h3 class="text-3xl font-kavoon font-bold text-black mb-4 hidden md:block">Find Us</h3>
                 
-                <img class="map-image w-full h-64 md:h-80 object-cover mb-6 border-2 border-gray-100" alt="Google Maps view of the café location">
+                <img src="Images/map.jpeg"class="map-image w-full h-50 md:h-[350px] object-cover mb-6 border-2 border-gray-100" alt="Google Maps view of the café location"><br>
                 
-                <address class="not-italic text-sm leading-relaxed text-gray-600">
+                <address class="not-italic text-black font-bold text-sm leading-relaxed">
                     <p class="font-bold text-gray-900 mb-1">Johannesburg, Rosebank.</p>
                     <p>South Africa</p>
-                    <p class="mt-4">info@8AM.co.za</p>
+                    <p class="mt-4">info@8AM.co.za</p><br>
                     <p>+27751652220</p>
                 </address>
             </div>
 
             <div class="md:w-1/2">
-                <h3 class="text-2xl font-serif-like font-light text-gray-900 mb-6 uppercase tracking-wider">Contact Us</h3>
-                <form class="space-y-4">
-                    <input type="text" placeholder="Full names" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-gray-500">
-                    <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-gray-500">
-                    <textarea placeholder="Message" rows="4" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-gray-500"></textarea>
+                <h3 class="text-2xl font-kavoon font-bold text-black mb-6 uppercase tracking-wide">Contact Us</h3>
+                <form class="space-y-8">
+                    <input type="text" placeholder="Full names" class="w-full p-3 border bg-[#EAE7E4] rounded focus:outline-none focus:border-gray-500">
+                    <input type="email" placeholder="Email" class="w-full p-3 border bg-[#EAE7E4] rounded focus:outline-none focus:border-gray-500">
+                    <textarea placeholder="Message" rows="4" class="w-full p-3 border bg-[#EAE7E4] rounded focus:outline-none focus:border-gray-500"></textarea>
                     
-                    <div class="flex items-center space-x-2 text-sm text-gray-600">
-                        <input type="checkbox" id="consent" name="consent" class="text-gray-900">
+                    <div class="flex items-center space-x-2 text-sm text-black tracking-wider font-irish-grover">
+                        <input type="checkbox" id="consent" name="consent" class="text-black">
                         <label for="consent">I consent to my data being processed.</label>
                     </div>
 
-                    <button type="submit" class="bg-gray-900 text-white font-semibold py-3 px-8 rounded hover:bg-gray-800 transition duration-300 uppercase tracking-wider mt-2">
+                    <button type="submit" class="bg-[#EAE7E4] text-black font-semibold py-3 px-8 rounded border-gray-500 hover:bg-white transition duration-300 uppercase tracking-wider mt-2">
                         Send
                     </button>
                 </form>
@@ -150,24 +174,27 @@
         </div>
     </section>
 
-    <footer class="bg-gray-50 py-8 border-t border-gray-100">
+    <footer class="bg-white py-8 border-t border-amber-900">
         <div class="max-w-6xl mx-auto px-4 text-center">
             
             <div class="text-xl font-bold tracking-widest uppercase mb-4">
-                <span class="text-gray-900">8AM</span> <span class="text-gray-500">CAFÉ</span>
+                <span class="text-amber-900 font-bold font-irish-grover">8AM CAFÉ</span>
             </div>
             
-            <div class="flex justify-center space-x-6 mb-6">
-                <a href="#" aria-label="Instagram" class="text-gray-700 hover:text-gray-900">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0z"></path><path fill-rule="evenodd" d="M16 2.05a.5.5 0 00-.5-.5H8.5a.5.5 0 00-.5.5v7.4a.5.5 0 00.5.5h7.4a.5.5 0 00.5-.5V2.05zM12 4.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM17.5 3a.5.5 0 11-1 0 .5.5 0 011 0z" clip-rule="evenodd"></path></svg>
+            <div class="flex justify-center space-x-4 mb-8">
+                <a href="#" aria-label="Instagram" class="mb-4 text-[#C7A682] hover:text-amber-900">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
                 </a>
-                <a href="#" aria-label="Facebook" class="text-gray-700 hover:text-gray-900">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15h-2.5v-3H10V9.74c0-2.22 1.35-3.43 3.32-3.43 1.02 0 1.93.07 2.19.1v2.16h-1.21c-1.05 0-1.26.5-1.26 1.23V12h2.74l-.45 3h-2.29v6.8c4.56-.93 8-4.96 8-9.8z"></path></svg>
+                <a href="#" aria-label="Facebook" class="mb-4 text-[#C7A682] hover:text-amber-900">
+                    <i class="fa-brands fa-square-facebook fa-2xl"></i>
                 </a>
             </div>
+<br>
+
+<br>
 
             <p class="text-xs text-gray-500">
-                &copy; Copyright **8AM Café** | Website by **tebe.m**
+                &copy; Copyright 8AM Café | Website by <span class="font-irish-grover text-italics text-black">tebo.m</span>
             </p>
         </div>
     </footer>
