@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>8AM Cafe - Our Story</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-logo { font-family: 'Playfair Display', serif; }
+    .font-heading { font-family: 'Playfair Display', serif; }
+
+    
+    /* Apply Inknut Antiqua globally or to specific elements */
+        body {
+            font-family: 'Inknut Antiqua', serif;
+        }
+
+        /* Custom styles for the 8AM Cafe soft green background */
+        .cafe-green {
+            background-color: #e0f2e0; /* A light, soft green that matches the image */
+        }
+        
+        /* You can specifically target the logo or header if needed */
+        .font-logo {
+             font-family: 'Inknut Antiqua', serif;
+             /* Use this class for the logo if you want a different font for the body */
+        }
+  </style>
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-8">
+        <img src="Images/logo cropped.jpeg"  alt="8AM Cafe Logo" class="h-20 w-auto bg-amber-1 rounded-lg"></a>
+      </div>
+      <nav class="hidden md:flex space-x-6 items-center">
+        <a href="index.html" class="text-amber-900 hover:text-amber-700 font-medium">HOME</a>
+        <a href="story.html" class="text-amber-900 hover:text-amber-700 font-extrabold">OUR STORY</a>
+        <a href="MENU.pdf" class="text-amber-900 hover:text-amber-700 font-medium">MENU</a>
+        <a href="gallery.html" class="text-amber-900 hover:text-amber-700 font-medium">GALLERY</a>
+      </nav>
+      <div class="flex items-center space-x-6">
+        <button class="text-gray-700"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></button>
+        <button class="text-gray-700"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Our Story Hero Section -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-6xl md:text-7xl font-bold text-emerald-800 font-heading tracking-tight mb-6">
+        OUT STORY
+      </h1>
+      <div class="w-25 h-0.5 bg-emerald-800 mx-auto"></div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-14 bg-white">
+    <div class="max-w-4xl mx-auto pt-10 px-8 grid md:grid-cols-2 gap-28 items-center">
+      
+      <!-- Text Content -->
+      <div class="space-y-12">
+        <h2 class="text-4xl font-bold text-emerald-800 font-heading">It all started at 8AM...</h2>
+        
+        <p class="text-lg text-gray-700 leading-relaxed">
+          In 2018, two friends — a baker and a barista — shared a dream over early morning coffee: 
+          to create a space where the first meal of the day wasn’t rushed, but celebrated.
+        </p>
+        
+        <p class="text-lg text-gray-700 leading-relaxed">
+          They believed that 8AM is more than just a time. It’s a moment of quiet possibility. 
+          A fresh page. The smell of bread rising, coffee brewing, and the soft light of a new day.
+        </p>
+        
+        <p class="text-lg text-gray-700 leading-relaxed">
+          From that belief, 8AM Cafe was born — a place where sourdough is slow-fermented for 48 hours, 
+          coffee is roasted weekly in small batches, and every pastry is made by hand, from scratch, every single morning.
+        </p>
+        
+        <p class="text-lg text-gray-700 leading-relaxed font-medium italic">
+          We don’t just serve breakfast.<br>
+          <span class="text-emerald-700 text-xl not-italic">We help you begin beautifully.</span>
+        </p>
+
+        <div class="pt-4">
+          <p class="text-sm text-gray-500 tracking-wider">Make Your Morning Matter®</p>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="relative pt-10">
+        <img src="Images/hero.jpeg" alt="8AM Cafe interior morning light" class="rounded-lg shadow-2xl w-full object-cover h-96 sm:h-screen sm:max-h-screen lg:h-[850px]">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-lg"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <p class="text-3xl font-bold font-logo">8AM CAFE</p>
+          <p class="text-sm opacity-90">Since 2018</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values / Philosophy Section -->
+  <section class="py-20 bg-emerald-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-10 text-center">
+        <div class="space-y-4">
+          <div class="w-20 h-20 mx-auto bg-emerald-100 rounded-full flex items-center justify-center">
+            <svg class="w-10 h-10 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-emerald-800 font-heading">Crafted Slowly</h3>
+          <p class="text-gray-700">No shortcuts. Everything made fresh, by hand, every morning.</p>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="w-20 h-20 mx-auto bg-emerald-100 rounded-full flex items-center justify-center">
+            <svg class="w-10 h-10 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-emerald-800 font-heading">Made with Love</h3>
+          <p class="text-gray-700">We bake and brew like we’re serving family — because you are.</p>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="w-20 h-20 mx-auto bg-emerald-100 rounded-full flex items-center justify-center">
+            <svg class="w-10 h-10 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-emerald-800 font-heading">Morning Mindset</h3>
+          <p class="text-gray-700">A calm space to breathe, think, and start your day right.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing Call -->
+  <section class="py-20 bg-white text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-emerald-800 font-heading mb-6">Come as you are.<br>Wake up with us.</h2>
+      <p class="text-xl text-gray-700 mb-8">We open our doors at 6:30 AM, every day.<br>The bread is warm by 7. The coffee is ready at 8.</p>
+      <a href="#" class="inline-block bg-amber-700 text-white px-10 py-4 rounded-full text-lg font-medium hover:bg-amber-800 transition">Visit Us Today</a>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8AM Cafe - Your Daily Ritual, Delivered.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* 2. Configure Tailwind Theme to use Kavoon and Outfit */
+        
+        /* Custom font family definitions */
+        .font-kavoon {
+            font-family: 'Kavoon', cursive;
+        }
+        body {
+            /* This will be mostly overridden by Tailwind's 'font-sans' and custom classes */
+            font-family: 'Outfit', sans-serif; 
+        }
+        .font-outfit {
+            font-family: 'Outfit', sans-serif;
+        }
+         .font-irish-grover{
+          font-family: 'irish-grover','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS','italics', sans-serif;
+        }
+
+        /* Set base font for body */
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+        /* Custom background image for the Hero section */
+        .hero-bg {
+            /* Using a common coffee shop interior image as a placeholder */
+            background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh; /* Make it a prominent feature */
+        }
+        .section-banner {
+              background-image: url('images/background.jpeg'); 
+        }
+    </style>
+</head>
+
+
+      <body class="font-sans bg-white text-amber-900">
+          <header class="bg-white shadow-md sticky top-0 z-50">
+      <nav class="container mx-auto flex justify-between items-center p-4">
+
+       <!-- ✅ Logo -->
+      <img
+        src="images/logo cropped.jpeg"
+        alt="8AM Cafe Logo"
+        class="h-20 w-auto bg-amber-1 rounded-lg"
+         />
+      </a>
+
+     <!-- ✅ Navigation Links -->
+       <ul class="hidden md:flex space-x-6 items-center">
+         <li>
+           <a href="index.html" class="text-amber-900 hover:text-amber-600 font-extrabold">HOME</a>
+         </li>
+         <li>
+           <a href="story.html" class="text-amber-900 hover:text-amber-600 font-medium">OUR STORY</a>
+         </li>
+         <li>
+           <a href="MENU.pdf" class="text-amber-900 hover:text-amber-600 font-medium">MENU</a>
+         </li>
+         <li>
+           <a href="gallery.html" class="text-amber-900 hover:text-amber-600 font-semibold">GALLERY</a>
+           </li>
+       </ul>
+
+    
+    <!-- ✅ Login / Sign Up Button -->
+    <div class="flex items-center space-x-4">
+                <a href="#login" class="text-amber-900 hover:text-blue-500 p-2 rounded-full transition duration-150 ease-in-out">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                    <span class="sr-only">Login</span>
+                  </a>
+      
+              <a href="cart.html" class="relative p-1 hover:text-amber-600 transition duration-150" aria-label="Shopping cart">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4z"></path></svg>
+            <span id="cart-counter" 
+                  class="hidden absolute -top-1 -right-1 bg-red-600 text-white text-xs font-bold w-4 h-4 rounded-full flex items-center justify-center">
+                </span>
+              </a>      
+         </div>
+      </nav>
+  </header>
+
+    <main class="bg-white max-w-6xl mx-auto px-4 py-16">
+        <div class="flex flex-col md:flex-row items-center md:space-x-12 opacity-100 rounded-full">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <img src="Images/hero.jpeg">
+            </div>
+            
+            <div class="md:w-1/2">
+                <h1 class="text-4xl font-kavoon font-extrabold text-amber-800 mb-4">Welcome to 8AM Café</h1><br>
+                <p class="text-lg leading-relaxed text-black">
+                    The aroma of freshly brewed coffee is in the air, the morning light is just catching the texture of our creamy milk building. Whether you're here for a quick espresso, a hearty breakfast, or just a quiet moment before the rush, we're ready to serve you!
+                </p>
+            </div>
+        </div>
+    </main>
+    
+    <section class="bg-white py-16 text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-kavoon text-amber-800 mb-4 font-extrabold tracking-wider">What We Offer</h2>
+            <p class="font-bold font-kavoon text-black mb-12">Make Your Mornings Better! Freshly Brewed Coffee & Delicious Pastries.</p><br>
+
+            <div class="flex flex-wrap justify-center space-y-8 md:space-y-0 md:space-x-28">
+                <div class="w-1/2 md:w-auto flex flex-col items-center"><br>
+                    <img src="icons/grab icon.jpeg" alt="Grab & Go Icon" class="w-22 h-20 mb-5">
+                    <p class="font-bold font-irish-grover text-black">Grab &</p>
+                    <span class="font-semibold font-irish-grover text-black">Go Meals</span>
+                </div>
+
+                <div class="w-1/2 md:w-auto flex flex-col items-center">
+                    <img src="icons/salad icon.png" alt="Salads & Bowls" class="w-28 h-26 mb-0"><br>
+                    <p class="font-bold font-irish-grover text-black">Salads</p>
+                     <span class="font-semibold font-irish-grover text-black">& Bowls</span>
+                </div>
+
+                <div class="w-1/2 md:w-auto flex flex-col items-center"><br>
+                    <img src="icons/croissant icon.png" alt="Baked Goods" class="w-22 h-20 mb-5"><br>
+                    <p class="font-semibold font-irish-grover text-black">Baked Goods</p>
+                </div>
+
+                <div class="w-1/2 md:w-auto flex flex-col items-center"><br>
+                    <img src="icons/coffee machine icon.jpeg" alt="Good Coffee" class="w-22 h-20 mb-5"><br>
+                    <p class="font-semibold font-irish-grover text-black">Good Coffee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <section class="section-banner h-72 flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <a href="MENU.pdf" target="_blank" class="relative z-10 bg-[#C7A682] text-gray-900 font-bold py-3 px-8 rounded hover:bg-white transition duration-300 shadow-xl">
+            View Our Menu
+        </a>
+    </section><br>
+
+        
+        <!-- Gallery Section -->
+<section id="Gallery" class="bg-white py-10">
+    <div class="max-w-5xl mx-auto px-8">
+    <h1 class="text-5xl font-bold text-center text-emerald-800 mb-12 tracking-tight">GALLERY</h1>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 auto-rows-fr">
+
+        <!-- Replace all image src with your actual image paths or keep placeholder URLs -->
+<img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?w=600" alt="Coffee beans" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/rye bread.jpeg" alt="Flatbread" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/naan bread.jpeg" alt="Latte art" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/sourdough.jpeg" alt="Sourdough" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/ciabatta.jpeg" alt="Matcha" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/iced coffee L.png" alt="Cafe interior" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600" alt="Naan bread" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/ice geen matcha S.png" alt="8AM mug" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/turkish.jpeg" alt="Granary bread" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600" alt="Croissant" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/white hot choc.png" alt="Juice" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/hero.jpeg" alt="Matcha latte" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/immunity boost shot.png" alt="Cold brew" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/hot chocolatw,marshmellows.png" alt="Sourdough loaf" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/croissant 2.jpeg" alt="Cappuccino" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/green macha latte.png" alt="Green juice" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/beetroo shot.png" alt="Red juice" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/naan bread.jpeg" alt="Baguette" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/croissant.png" alt="Croissant" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/lemon&orange tea.png" alt="8AM coffee" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/croissant.png" alt="8AM coffee" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/wheatgrass shot.png" alt="8AM coffee" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/mocha whipped cream.png" alt="8AM coffee" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+<img src="Images/iced coffee M.png" alt="8AM coffee" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
+</div>
+    </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <div class="flex flex-col md:flex-row md:space-x-12">
+            
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h3 class="text-3xl font-kavoon font-bold text-black mb-4 hidden md:block">Find Us</h3>
+                
+                <img src="Images/map.jpeg"class="map-image w-full h-50 md:h-[350px] object-cover mb-6 border-2 border-gray-100" alt="Google Maps view of the café location"><br>
+                
+                <address class="not-italic text-black font-bold text-sm leading-relaxed">
+                    <p class="font-bold text-gray-900 mb-1">Johannesburg, Rosebank.</p>
+                    <p>South Africa</p>
+                    <p class="mt-4">info@8AM.co.za</p><br>
+                    <p>+27751652220</p>
+                </address>
+            </div>
+
+            <div class="md:w-1/2">
+                <h3 class="text-2xl font-kavoon font-bold text-black mb-6 uppercase tracking-wide">Contact Us</h3>
+                <form class="space-y-8">
+                    <input type="text" placeholder="Full names" class="w-full p-3 border bg-[#EAE7E4] rounded focus:outline-none focus:border-gray-500">
+                    <input type="email" placeholder="Email" class="w-full p-3 border bg-[#EAE7E4] rounded focus:outline-none focus:border-gray-500">
+                    <textarea placeholder="Message" rows="4" class="w-full p-3 border bg-[#EAE7E4] rounded focus:outline-none focus:border-gray-500"></textarea>
+                    
+                    <div class="flex items-center space-x-2 text-sm text-black tracking-wider font-irish-grover">
+                        <input type="checkbox" id="consent" name="consent" class="text-black">
+                        <label for="consent">I consent to my data being processed.</label>
+                    </div>
+
+                    <button type="submit" class="bg-[#EAE7E4] text-black font-semibold py-3 px-8 rounded border-gray-500 hover:bg-white transition duration-300 uppercase tracking-wider mt-2">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-8 border-t border-amber-900">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            
+            <div class="text-xl font-bold tracking-widest uppercase mb-4">
+                <span class="text-amber-900 font-bold font-irish-grover">8AM CAFÉ</span>
+            </div>
+            
+            <div class="flex justify-center space-x-4 mb-8">
+                <a href="#" aria-label="Instagram" class="mb-4 text-[#C7A682] hover:text-amber-900">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+                <a href="#" aria-label="Facebook" class="mb-4 text-[#C7A682] hover:text-amber-900">
+                    <i class="fa-brands fa-square-facebook fa-2xl"></i>
+                </a>
+            </div>
+<br>
+
+            <p class="text-xs text-gray-500">
+                &copy; Copyright 8AM Café | Website by <span class="font-irish-grover text-italics text-black">tebo.m</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
