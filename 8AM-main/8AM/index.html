@@ -1,48 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8AM Cafe - Your Daily Ritual, Delivered.</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        /* 2. Configure Tailwind Theme to use Kavoon and Outfit */
-        
-        /* Custom font family definitions */
-        .font-kavoon {
-            font-family: 'Kavoon', cursive;
-        }
-        body {
-            /* This will be mostly overridden by Tailwind's 'font-sans' and custom classes */
-            font-family: 'Outfit', sans-serif; 
-        }
-        .font-outfit {
-            font-family: 'Outfit', sans-serif;
-        }
-         .font-irish-grover{
-          font-family: 'irish-grover','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS','italics', sans-serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>8AM Cafe - Our Story</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-logo { font-family: 'Playfair Display', serif; }
+    .font-heading { font-family: 'Playfair Display', serif; }
 
-        /* Set base font for body */
-        body {
-            font-family: 'Outfit', sans-serif;
-        }
-        /* Custom background image for the Hero section */
-        .hero-bg {
-            /* Using a common coffee shop interior image as a placeholder */
-            background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 80vh; /* Make it a prominent feature */
-        }
-        .section-banner {
-              background-image: url('images/background.jpeg'); 
-        }
-    </style>
+ /* Apply Inknut Antiqua globally or to specific elements */
+     body {
+         font-family: 'Inknut Antiqua', serif;
+     }
+     /* Custom styles for the 8AM Cafe soft green background */
+     .cafe-green {
+         background-color: #e0f2e0; /* A light, soft green that matches the image */
+     }
+     
+     /* You can specifically target the logo or header if needed */
+     .font-logo {
+          font-family: 'Inknut Antiqua', serif;
+          /* Use this class for the logo if you want a different font for the body */
+     }  
+  </style>
+  </style>
 </head>
-
+<body class="bg-white text-gray-800">
 
       <body class="font-sans bg-white text-amber-900">
           <header class="bg-white shadow-md sticky top-0 z-50">
@@ -62,7 +48,7 @@
            <a href="index.html" class="text-amber-900 hover:text-amber-600 font-extrabold">HOME</a>
          </li>
          <li>
-           <a href="story.html" class="text-amber-900 hover:text-amber-600 font-medium">OUR STORY</a>
+           <a href="index.html#story" class="text-amber-900 hover:text-amber-600 font-medium">OUR STORY</a>
          </li>
          <li>
            <a href="MENU.pdf" class="text-amber-900 hover:text-amber-600 font-medium">MENU</a>
@@ -73,21 +59,33 @@
        </ul>
 
     
-    <!-- ✅ Login / Sign Up Button -->
+    <!-- Icons: Search + Login + Cart -->
     <div class="flex items-center space-x-4">
-                <a href="#login" class="text-amber-900 hover:text-blue-500 p-2 rounded-full transition duration-150 ease-in-out">
+
+        <!-- Search Icon -->
+       <a href="#search" class="text-amber-900 hover:text-amber-700 transition duration-200" aria-label="Search">
+         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+         </svg>
+       </a>
+
+        <!--login/profile icon-->
+                <a href="login.html" class="text-amber-900 hover:text-amber-700 p-2 rounded-full transition duration-150 ease-in-out">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                     </svg>
                     <span class="sr-only">Login</span>
                   </a>
-      
-              <a href="cart.html" class="relative p-1 hover:text-amber-600 transition duration-150" aria-label="Shopping cart">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4z"></path></svg>
+
+       <!--shopping icon-->
+              <a href="cart.html" class="relative p-1  text-amber-900 hover:text-amber-600 transition duration-150" aria-label="Shopping cart">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+          </svg>
             <span id="cart-counter" 
                   class="hidden absolute -top-1 -right-1 bg-red-600 text-white text-xs font-bold w-4 h-4 rounded-full flex items-center justify-center">
-                </span>
-              </a>      
+                </span>  
+        </a>
          </div>
       </nav>
   </header>
@@ -141,46 +139,112 @@
 
     <section class="section-banner h-72 flex items-center justify-center relative">
         <div class="absolute inset-0 bg-black opacity-30"></div>
+        <img src="Images/background.jpeg" alt="8AM Cafe Banner" class="absolute inset-0 w-full h-full object-cover opacity-90">
         <a href="MENU.pdf" target="_blank" class="relative z-10 bg-[#C7A682] text-gray-900 font-bold py-3 px-8 rounded hover:bg-white transition duration-300 shadow-xl">
             View Our Menu
         </a>
     </section><br>
+    <br>
+    <br>
 
+    <!-- Our Story Hero Section -->
+     <section id="story">
+   <section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h1 class="text-6xl md:text-7xl font-bold text-emerald-800 font-heading tracking-tight mb-6">
+      OUR STORY
+    </h1>
+    <div class="w-25 h-0.5 bg-emerald-800 mx-auto"></div>
+  </div>
+</section>
+
+  <!-- Main Content -->
+  <section class="py-14 bg-white">
+    <div class="max-w-4xl mx-auto pt-10 px-8 grid md:grid-cols-2 gap-32 items-center">
+      
+      <!-- Text Content -->
+      <div class="space-y-12">
+        <h2 class="text-4xl font-bold text-emerald-800 font-heading">It all started at 8AM...</h2>
         
-        <!-- Gallery Section -->
-<section id="Gallery" class="bg-white py-10">
-    <div class="max-w-5xl mx-auto px-8">
-    <h1 class="text-5xl font-bold text-center text-emerald-800 mb-12 tracking-tight">GALLERY</h1>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 auto-rows-fr">
+        <p class="text-lg text-gray-700 leading-relaxed">
+          In 2025, two friends — a baker and a barista — shared a dream over early morning coffee: 
+          to create a space where the first meal of the day wasn’t rushed, but celebrated.
+        </p>
+        
+        <p class="text-lg text-gray-700 leading-relaxed">
+          They believed that 8AM is more than just a time. It’s a moment of quiet possibility. 
+          A fresh page. The smell of bread rising, coffee brewing, and the soft light of a new day.
+        </p>
+        
+        <p class="text-lg text-gray-700 leading-relaxed">
+          From that belief, 8AM Cafe was born — a place where sourdough is slow-fermented for 48 hours, 
+          coffee is roasted weekly in small batches, and every pastry is made by hand, from scratch, every single morning.
+        </p>
+        
+        <p class="text-lg text-gray-700 leading-relaxed font-medium italic">
+          We don’t just serve breakfast.<br>
+          <span class="text-emerald-700 text-xl not-italic">We help you begin beautifully.</span>
+        </p>
+        <div class="pt-4">
+        </div>
+      </div>
 
-        <!-- Replace all image src with your actual image paths or keep placeholder URLs -->
-<img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?w=600" alt="Coffee beans" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/rye bread.jpeg" alt="Flatbread" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/naan bread.jpeg" alt="Latte art" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/sourdough.jpeg" alt="Sourdough" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/ciabatta.jpeg" alt="Matcha" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/iced coffee L.png" alt="Cafe interior" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600" alt="Naan bread" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/ice geen matcha S.png" alt="8AM mug" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/turkish.jpeg" alt="Granary bread" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600" alt="Croissant" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/white hot choc.png" alt="Juice" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/hero.jpeg" alt="Matcha latte" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/immunity boost shot.png" alt="Cold brew" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/hot chocolatw,marshmellows.png" alt="Sourdough loaf" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/croissant 2.jpeg" alt="Cappuccino" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/green macha latte.png" alt="Green juice" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/beetroo shot.png" alt="Red juice" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/naan bread.jpeg" alt="Baguette" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/croissant.png" alt="Croissant" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/lemon&orange tea.png" alt="8AM coffee" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/croissant.png" alt="8AM coffee" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/wheatgrass shot.png" alt="8AM coffee" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/mocha whipped cream.png" alt="8AM coffee" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-<img src="Images/iced coffee M.png" alt="8AM coffee" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow">
-</div>
+      <!-- Image -->
+      <div class="relative pt-10">
+        <img src="Images/hero.jpeg" alt="8AM Cafe interior morning light" class="rounded-lg shadow-2xl w-full object-cover h-96 sm:h-screen sm:max-h-screen lg:h-[850px]">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-lg"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <p class="text-3xl font-bold font-logo">8AM CAFE</p>
+          <p class="text-sm opacity-90">Since 2025</p>
+        </div>
+      </div>
     </div>
-    </section>
+  </section>
+
+  <!-- Values / Philosophy Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-10 text-center">
+        <div class="space-y-4">
+          <div class="w-20 h-20 mx-auto bg-emerald-100 rounded-full flex items-center justify-center">
+            <svg class="w-10 h-10 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-emerald-800 font-heading">Crafted Slowly</h3>
+          <p class="text-gray-700">No shortcuts. Everything made fresh, by hand, every morning.</p>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="w-20 h-20 mx-auto bg-emerald-100 rounded-full flex items-center justify-center">
+            <svg class="w-10 h-10 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-emerald-800 font-heading">Made with Love</h3>
+          <p class="text-gray-700">We bake and brew like we’re serving family — because you are.</p>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="w-20 h-20 mx-auto bg-emerald-100 rounded-full flex items-center justify-center">
+            <svg class="w-10 h-10 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-emerald-800 font-heading">Morning Mindset</h3>
+          <p class="text-gray-700">A calm space to breathe, think, and start your day right.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing Call -->
+  <section class="py-20 bg-white text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-emerald-800 font-heading mb-6">Come as you are.<br>Wake up with us.</h2>
+      <p class="text-xl text-gray-700 mb-8">We open our doors at 6:30 AM, every day.<br>The bread is warm by 7. The coffee is ready at 8.</p>
+      <a href="index.html" class="inline-block bg-amber-700 text-white px-10 py-4 rounded-full text-lg font-medium hover:bg-amber-800 transition">Visit Us Today</a>
+    </div>
+    <br>
+
+    <div class="pt-4">
+  <p class="text-sm text-gray-500 tracking-wider">Make Your Morning Matter®</p>
+</div>
+  </section>
 
     <section class="max-w-6xl mx-auto px-4 py-16">
         <div class="flex flex-col md:flex-row md:space-x-12">

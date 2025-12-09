@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart • 8AM Cafe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-heading { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-amber-50 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4 max-w-7xl">
+      <a href="cart.html">
+        <img src="images/logo cropped.jpeg" alt="8AM Cafe Logo" class="h-16 w-auto rounded-lg"/>
+      </a>
+
+      <ul class="hidden md:flex space-x-8 items-center text-amber-900 font-medium">
+        <li><a href="index.html" class="hover:text-amber-600 font-bold">HOME</a></li>
+        <li><a href="index.html#story" class="hover:text-amber-600">OUR STORY</a></li>
+        <li><a href="MENU.pdf" class="hover:text-amber-600">MENU</a></li>
+        <li><a href="gallery.html" class="hover:text-amber-600">GALLERY</a></li>
+      </ul>
+       <!--shopping icon-->
+        <a href="cart.html" class="relative p-1  text-amber-900 hover:text-amber-600 transition duration-150" aria-label="Shopping cart">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+    </svg>
+      <span id="cart-counter" 
+            class="hidden absolute -top-1 -right-1 bg-red-600 text-white text-xs font-bold w-4 h-4 rounded-full flex items-center justify-center">
+    </nav>
+  </header>
+
+  <!-- Cart Page Content -->
+  <main class="flex-grow container mx-auto px-4 py-12 max-w-5xl">
+    <h1 class="text-4xl md:text-5xl font-bold text-center text-emerald-800 mb-12 font-heading">
+      Your Cart
+    </h1>
+
+    <!-- Empty Cart State -->
+    <div class="bg-white rounded-3xl shadow-xl p-10 md:p-16 text-center border border-amber-100">
+      <div class="w-32 h-32 mx-auto mb-8 opacity-70">
+        <!-- Shopping Bag Icon -->
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full text-amber-700">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+        </svg>
+      </div>
+
+      <h2 class="text-2xl font-semibold text-gray-700 mb-4">Your cart is empty</h2>
+      <p class="text-gray-600 mb-10 max-w-md mx-auto">
+        Looks like you haven't added anything to your cart yet. 
+        Start your morning right with our fresh pastries and coffee!
+      </p>
+
+      <a href="MENU.pdf" 
+         class="inline-block bg-amber-700 hover:bg-amber-800 text-white font-bold py-4 px-amber-900 px-10 rounded-2xl transition transform hover:scale-105 duration-300 shadow-lg text-lg">
+        Browse Menu
+      </a>
+    </div>
+
+    <!-- Cart Items (will appear when items are added) -->
+    <!-- You can remove this comment later when adding real cart functionality -->
+    <!--
+    <div id="cart-items" class="space-y-6 mt-12">
+      <!-- Cart item rows will be injected here via JavaScript -->
+    </div>
+    -->
+
+  </main>
+
+  <!-- Footer (optional) -->
+  <footer class="bg-white border-t border-gray-200 py-8 mt-auto">
+    <div class="container mx-auto text-center text-gray-600 text-sm">
+      <p>&copy; 2025 8AM Cafe. Make Your Morning Matter®</p>
+    </div>
+  </footer>
+</body>
+</html>
